@@ -2,32 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+  /* styles/globals.css */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  body.light {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --border-color: #e2e8f0;
+    --primary-color: #3a86ff;
+    --primary-foreground-color: #ffffff;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  
+  body.dark {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --border-color: #333;
+    --primary-color: #3a86ff;
+    --primary-foreground-color: #000000;
   }
-}
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  .bg-background {
+    background-color: var(--bg-color);
+  }
+  
+  .border-b {
+    border-bottom-color: var(--border-color);
+  }
+  
+  .text-primary {
+    color: var(--primary-color);
+  }
+  
+  .bg-primary {
+    background-color: var(--primary-color);
+  }
+  
+  .text-primary-foreground {
+    color: var(--primary-foreground-color);
+  }
+
+  
