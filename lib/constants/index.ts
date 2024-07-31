@@ -59,7 +59,7 @@ export const content = {
       degree: "Master of Science in Information Technology",
       school: "Clark University",
       years: "May 2025",
-      icon: "/Clark_university_seal.png",
+      icon: "/cu.png",
       grade: '3.9/4.0 GPA',
       description: `Currently having a score of 3.9 GPA. Completed coursework in technologies such as Python, Splunk, Tableau and Cybersecurity.`
     },
@@ -75,7 +75,7 @@ export const content = {
   workExperience: [
     {
       title: "Web Designer and Data Analyst",
-      logo: "/Clark_university_seal.png",
+      logo: "/cu.png",
       company: "Clark University",
       employmentType: "Part-time",
       duration: "Feb 2024 - Present",
@@ -90,7 +90,7 @@ export const content = {
     },
     {
       title: "Research Assistant",
-      logo: "/Clark_university_seal.png",
+      logo: "/cu.png",
       company: "Clark University",
       employmentType: "Part-time",
       duration: "Dec 2023 - Present",
