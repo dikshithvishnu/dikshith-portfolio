@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { content } from "@/lib/constants";
+import { SlLocationPin } from "react-icons/sl";
 
 export default function Resume() {
   const data = content;
@@ -24,6 +25,14 @@ export default function Resume() {
                   <span>
                     <Link target="_blank" href={`tel: ${data.personal.phone}`}>
                       {data.personal.phone}
+                    </Link>
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <SlLocationPin className="h-5 w-5" />
+                  <span>
+                    <Link target="_blank" href={`tel: ${data.personal.phone}`}>
+                      {data.personal.address.city}, {data.personal.address.state} 
                     </Link>
                   </span>
                 </div>
