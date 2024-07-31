@@ -4,7 +4,7 @@ import dayjs from 'dayjs'
 interface FormData {
     name: string;
     email: string;
-    phone?: string | number;
+    phone?: string;
     message: string;
 }
 
