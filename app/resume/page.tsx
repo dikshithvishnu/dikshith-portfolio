@@ -14,7 +14,7 @@ export default function Resume() {
                 <div className="flex items-center gap-2">
                   <MailIcon className="h-5 w-5" />
                   <span>
-                    <Link href={`mailto: ${data.personal.email}`}>
+                    <Link target="_blank" href={`mailto: ${data.personal.email}`}>
                       {data.personal.email}
                     </Link>
                   </span>
@@ -22,7 +22,7 @@ export default function Resume() {
                 <div className="flex items-center gap-2">
                   <PhoneIcon className="h-5 w-5" />
                   <span>
-                    <Link href={`tel: ${data.personal.phone}`}>
+                    <Link target="_blank" href={`tel: ${data.personal.phone}`}>
                       {data.personal.phone}
                     </Link>
                   </span>

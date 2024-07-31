@@ -79,7 +79,7 @@ export default function Contact() {
                 {data.personal.socials.map((social, index) => {
                     return (
 
-              <Link key={index} href={social.link} className="text-muted-foreground hover:text-primary" prefetch={false}>
+              <Link key={index} href={social.link} target="_blank" className="text-muted-foreground hover:text-primary" prefetch={false}>
                 <social.icon className="h-6 w-6" />
                 <span className="sr-only">{social.name}</span>
               </Link>
@@ -97,7 +97,7 @@ export default function Contact() {
           </div>
           <div>
             <h2 className="text-2xl font-bold mb-2">Phone</h2>
-            <p className="text-muted-foreground"><a href={`tel: ${data.personal.phone}`}>{data.personal.phone}</a></p>
+            <p className="text-muted-foreground"><a target="_blank" href={`tel: ${data.personal.phone}`}>{data.personal.phone}</a></p>
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ const ProjectsCard = ({ data }: { data: any }) => {
             <CardContent className="mt-4 space-y-4">
                 {data.projects.map((project: any, index: number) => (
                     <div key={index} className="flex items-start lg:items-center gap-4">
-                      <Link className="w-1/6" href={project.url} >
+                      <Link className="w-1/6" target="_blank" href={project.url} >
                         <Image
                             src={project.image}
                             width="100"
