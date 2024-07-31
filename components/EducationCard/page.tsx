@@ -9,7 +9,7 @@ const EducationCard = ({ data } : { data : any} ) => {
             </CardHeader>
             <CardContent className="space-y-4">
               {data.education.map((edu: any, index: number) => (
-                <div key={index} className="flex items-center gap-4">
+                <div key={index} className="flex items-start gap-4">
                   <div className="rounded-full p-2 text-primary-foreground">
                     <Image
                       src={edu.icon}
