@@ -51,7 +51,7 @@ export default function Contact() {
             </div>
             <div>
               <Label htmlFor="phone">Phone</Label>
-              <Input required id="phone" type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value={formData.phone} onChange={(e) => {
+              <Input required id="phone" type="tel" placeholder="1234567890" value={formData.phone} onChange={(e) => {
                 setFormData({
                     ...formData,
                     phone: e.target.value
