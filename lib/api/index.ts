@@ -11,20 +11,9 @@ interface FormData {
 export async function handleSendContact(formData: FormData, setFormData: (data: any) => void, setLoading: (loading: boolean) => void, toast: any) {
     try {
         setLoading(true)
-        const response: AxiosResponse | undefined = await axios.post(`${process.env.NEXT_PUBLIC_API_BASE_URL}/dikshith_contact`, formData, {
-            headers: {
-                apiKey: process.env.NEXT_PUBLIC_API_KEY,
-                Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_KEY}`,
-                "Content-Type": "application/json",
-                Prefer: "resolution=merge-duplicates"
-            }
-        })
+        const response: AxiosResponse | undefined = await axios.post(`/api/submit-form`, formData)
         if(response && response?.status === 201) {
             setLoading(false)
-            await axios.post('/api/send-email', {
-                name: formData.name,
-                email: formData.email
-            })
             setFormData({
                 name: '',
                 email: '',
