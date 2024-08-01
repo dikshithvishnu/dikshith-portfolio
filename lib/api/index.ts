@@ -8,8 +8,9 @@ interface FormData {
     message: string;
 }
 
-export async function handleSendContact(formData: FormData, setFormData: (data: any) => void, toast: any) {
+export async function handleSendContact(formData: FormData, setFormData: (data: any) => void, setLoading: (loading: boolean) => void, toast: any) {
     try {
+        setLoading(true)
         const response: AxiosResponse | undefined = await axios.post(`${process.env.NEXT_PUBLIC_API_BASE_URL}/dikshith_contact`, formData, {
             headers: {
                 apiKey: process.env.NEXT_PUBLIC_API_KEY,
@@ -19,6 +20,11 @@ export async function handleSendContact(formData: FormData, setFormData: (data: 
             }
         })
         if(response && response?.status === 201) {
+            setLoading(false)
+            await axios.post('/api/send-email', {
+                name: formData.name,
+                email: formData.email
+            })
             setFormData({
                 name: '',
                 email: '',
@@ -31,6 +37,7 @@ export async function handleSendContact(formData: FormData, setFormData: (data: 
             })
         }
     } catch(e) {
+        setLoading(false)
         console.log(e)
     }
 }

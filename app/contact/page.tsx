@@ -18,6 +18,7 @@ export default function Contact() {
         email: '',
         message: ''
     })
+    const [loading, setLoading] = useState<boolean>(false);
   return (
     <div className="container mx-auto py-12 md:py-20 px-4 md:px-6 lg:px-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
@@ -29,7 +30,7 @@ export default function Contact() {
           </p>
           <form className="space-y-4" onSubmit={(e) => {
             e.preventDefault()
-            handleSendContact(formData, setFormData, toast)
+            handleSendContact(formData, setFormData, setLoading, toast)
           }}>
             <div>
               <Label htmlFor="name">Name <sup className="text-red-500">*</sup> </Label>
@@ -67,7 +68,7 @@ export default function Contact() {
                 })
               }}  />
             </div>
-            <Button type="submit" className="w-full">
+            <Button disabled={loading} type="submit" className="w-full">
               Send Message
             </Button>
           </form>

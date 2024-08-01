@@ -3,6 +3,7 @@ import nodemailer from 'nodemailer';
 
 export async function POST(req: NextRequest) {
     try {
+        console.log("called")
         const body = await req.json(); 
 
         const { name, email } = body;
