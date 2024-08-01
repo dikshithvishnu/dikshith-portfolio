@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
   try {
-    const baseURL = await req.url.split("/api")[0];
+    const baseURL = req.url.split("/api")[0];
     const payload = await req.json();
     if(!process.env.API_BASE_URL) return NextResponse.json({message: 'No env set'}, { status: 400 })
 
@@ -24,11 +24,18 @@ export async function POST(req: Request) {
         { message: `If you're a developer, definitely hit me up!` },
         { status: 201 }
       )
-      axios.post(`${baseURL}/api/send-email`, {
+
+      const emailURL  = `${baseURL}/api/send-email`
+
+      axios.post(emailURL, {
         name: payload.name,
         email: payload.email,
       })
-      axios.post(`${baseURL}/api/notify-me`, payload);
+      
+      const notificationURL = `${baseURL}/api/notify-me`
+
+      axios.post(notificationURL, payload);
+
       return res;
     }
   } catch (e) {
