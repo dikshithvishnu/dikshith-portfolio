@@ -26,7 +26,7 @@ export async function handleSendContact(formData: FormData, setFormData: (data: 
                 message: ''
             })
             toast({
-                title: `Form Submitted Successfully!`,
+                title: `Thanks for reaching out! I’ve received your message and will get back to you soon. 😊`,
                 description: `${dayjs().format('DD-MM-YYYY HH:mm:ss')}`,
             })
         }
