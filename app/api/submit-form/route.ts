@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
   try {
-    const baseURL = req.url.split("/api")[0];
+    const baseURL = await req.url.split("/api")[0];
     const payload = await req.json();
     if(!process.env.API_BASE_URL) return NextResponse.json({message: 'No env set'}, { status: 400 })
 
