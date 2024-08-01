@@ -25,10 +25,10 @@ export async function POST(req: Request) {
         { status: 201 }
       )
       axios.post(`${baseURL}/api/notify-me`, payload);
-      axios.post(`${baseURL}/api/send-email`, {
-        name: payload.name,
-        email: payload.email,
-      })
+    //   axios.post(`${baseURL}/api/send-email`, {
+    //     name: payload.name,
+    //     email: payload.email,
+    //   })
       return res;
     }
   } catch (e) {

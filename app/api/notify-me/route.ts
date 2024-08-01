@@ -18,7 +18,7 @@ export async function POST(req: Request) {
         content: discordMessage,
       }
     );
-    if (response.status === 200) {
+    if (response.status === 204) {
       return NextResponse.json({ message: `Notified!` }, { status: 200 });
     }
   } catch (e) {
