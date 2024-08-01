@@ -10,7 +10,7 @@ interface FormData {
 
 export async function handleSendContact(formData: FormData, setFormData: (data: any) => void, toast: any) {
     try {
-        const response: AxiosResponse | undefined = await axios.post(`${process.env.NEXT_PUBLIC_API_BASE_URL}/dikshith-contact`, formData, {
+        const response: AxiosResponse | undefined = await axios.post(`${process.env.NEXT_PUBLIC_API_BASE_URL}/dikshith_contact`, formData, {
             headers: {
                 apiKey: process.env.NEXT_PUBLIC_API_KEY,
                 Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_KEY}`,
