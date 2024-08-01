@@ -24,11 +24,11 @@ export async function POST(req: Request) {
         { message: `If you're a developer, definitely hit me up!` },
         { status: 201 }
       )
-      axios.post(`${baseURL}/api/notify-me`, payload);
       axios.post(`${baseURL}/api/send-email`, {
         name: payload.name,
         email: payload.email,
       })
+      axios.post(`${baseURL}/api/notify-me`, payload);
       return res;
     }
   } catch (e) {
