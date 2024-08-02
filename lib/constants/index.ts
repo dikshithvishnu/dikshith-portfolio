@@ -13,7 +13,7 @@ import { MdOutlineEmail } from "react-icons/md";
 export const content = {
   personal: {
     name: 'Dikshith Vishnuvardhan',
-    email: 'dvishnuvardhan@clarku.edu',
+    email: 'dikshithvishnu2@gmail.com',
     phone: '+1 (508) 615-3786',
     socials: [{
       icon: FaGithub,
