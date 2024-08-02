@@ -9,19 +9,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: 'https://acme.com/about',
+      url: 'https://dikshith.com/about',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://acme.com/contact',
+      url: 'https://dikshith.com/contact',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.5,
     },
     {
-      url: 'https://acme.com/resume',
+      url: 'https://dikshith.com/resume',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.5,
