@@ -52,7 +52,7 @@ export default function Contact() {
             </div>
             <div>
               <Label htmlFor="phone">Phone</Label>
-              <Input required id="phone" type="tel" placeholder="1234567890" value={formData.phone} onChange={(e) => {
+              <Input id="phone" type="tel" placeholder="1234567890" value={formData.phone} onChange={(e) => {
                 setFormData({
                     ...formData,
                     phone: e.target.value
