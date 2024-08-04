@@ -66,7 +66,7 @@ export default function Header() {
                 <Link
                   key={index}
                   href={nav.href}
-                  className="text-sm font-medium hover:underline underline-offset-4"
+                  className="font-medium hover:underline underline-offset-4"
                   prefetch={false}
                 >
                   {nav.page}
