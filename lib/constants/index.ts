@@ -32,7 +32,7 @@ export const content = {
     },
     {
       icon: MdOutlineEmail,
-      link: 'mailto: dvishnuvardhan@clarku.edu',
+      link: 'mailto: dikshithvishnu2@gmail.com',
       name: 'Email'
     },
   ],
