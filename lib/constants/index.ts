@@ -86,7 +86,7 @@ export const content = {
         "Collaborated on daily tasks including poster design and data visualization.",
       ],
       description: `This role is for Clark University's Career Connection Center. My day-to-day tasks include analyzing alumni and students data, web design and WordPress Management.`,
-      skills: ["WordPress", "MySQL"],
+      skills: ["WordPress", "MySQL", "Canva"],
     },
     {
       title: "Research Assistant",
@@ -101,7 +101,7 @@ export const content = {
         "Created a client-side solution to track video watch times, assessing the impact of GPT recommendations on user behavior.",
       ],
       description: "As a research assistant for the Department of Mathematics and Computer Science, under Dr. Shuo Niu, we have set out to assess the impact of GPT-4 on TikTok video recommendations to users.",
-      skills: ["Node.js", "Next.js", "TypeScript", "Tailwind CSS"],
+      skills: ["Node.js", "Next.js", "TypeScript", "Tailwind CSS", "Microsoft Azure", "Docker"],
     },
     {
       title: "Software Engineer",
@@ -125,6 +125,9 @@ export const content = {
         "WebSocket",
         "Git CLI",
         "Bitbucket",
+        "NodeJS",
+        "ExpressJS",
+        "RabbitMQ"
       ],
     },
     {
@@ -135,7 +138,7 @@ export const content = {
       duration: "Jan 2022 - Dec 2022",
       location: "Remote",
       description: "Managed a high volume Shopify store for an Instagram Influencer with over 700k followers. Helped the store achieve USD 25k+ in sales month-on-month, 200k+ visitors monthly by optimising SEO and UI, and implementing abandoned cart marketing.",
-      skills: ["Web Technologies", "Shopify"],
+      skills: ["Polaris", "Shopify", "E-Commerce Management", "Logistics", "Marketing"],
     },
     {
       title: "Web Developer",
@@ -145,7 +148,7 @@ export const content = {
       duration: "Jul 2020 - Oct 2022",
       location: "Remote",
       description: "Developed multiple websites and landing pages using frameworks such as React.js, Next.js. Collaborated with developers to integrate business logic with user interfaces.",
-      skills: ["Web Technologies", "User Interface Design"],
+      skills: ["ReactJS", "User Interface Design", "Docker"],
     },
     {
       title: "Content Moderator",
