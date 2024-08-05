@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card"
+import Link from "next/link"
 
 const EducationCard = ({ data } : { data : any} ) => {
     return (
@@ -11,6 +12,7 @@ const EducationCard = ({ data } : { data : any} ) => {
               {data.education.map((edu: any, index: number) => (
                 <div key={index} className="flex items-start gap-4">
                   <div className="rounded-full p-2 text-primary-foreground">
+                    <Link href={edu.schoolURL}>
                     <Image
                       src={edu.icon}
                       height={60}
@@ -18,6 +20,7 @@ const EducationCard = ({ data } : { data : any} ) => {
                       className="rounded-full"
                       alt={edu.school}
                     />
+                    </Link>
                   </div>
                   <div>
                     <h3 className="text-lg font-medium">{edu.degree}</h3>

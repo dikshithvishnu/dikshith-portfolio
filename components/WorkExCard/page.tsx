@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card"
 import { Badge } from "../ui/badge"
+import Link from "next/link"
 
 const WorkExCard = ({data} : {data:any}) => {
     return (
@@ -14,7 +15,9 @@ const WorkExCard = ({data} : {data:any}) => {
               {data.workExperience.map((work: any, index: number) => (
                 <div key={index} className="flex items-center gap-4">
                   <div className="self-start w-1/6 rounded-full p-2 text-primary-foreground">
+                  <Link href={work.companyURL}>
                     <Image src={work.logo} height={60} width={60} className="rounded-full" alt={work.company} />
+                  </Link>  
                   </div>
                   <div className="flex-1 space-y-0.5">
                     <h3 className="text-lg font-medium">{work.title}</h3>
@@ -26,7 +29,7 @@ const WorkExCard = ({data} : {data:any}) => {
                     </p>
                     <p className="text-muted-foreground">{work?.description}</p>
                     <div className="flex gap-0.5 mt-0.5 flex-wrap">
-                    {work.skills.map((skill: any, index: number) => {
+                    {work.skills.map((skill: string, index: number) => {
                       return (
                         <Badge key={index}>
                           {skill}

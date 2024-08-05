@@ -9,8 +9,9 @@ import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
+import { ProfileData } from "../types";
 
-export const content = {
+export const content: ProfileData = {
   personal: {
     name: 'Dikshith Vishnuvardhan',
     email: 'dikshithvishnu2@gmail.com',
@@ -58,6 +59,7 @@ export const content = {
     {
       degree: "Master of Science in Information Technology",
       school: "Clark University",
+      schoolURL: "https://clarku.edu/",
       years: "May 2025",
       icon: "/cu.png",
       grade: '3.9/4.0 GPA',
@@ -66,6 +68,7 @@ export const content = {
     {
       degree: "Bachelor of Technology in Computer Science & Technology",
       school: "Dayananda Sagar University",
+      schoolURL: "https://dsu.edu.in/",
       years: "May 2022",
       icon: "/dsu.jpeg",
       grade: '6.94/10.00 GPA',
@@ -77,6 +80,7 @@ export const content = {
       title: "Web Designer and Data Analyst",
       logo: "/cu.png",
       company: "Clark University",
+      companyURL: 'https://clarku.edu/',
       employmentType: "Part-time",
       duration: "Feb 2024 - Present",
       location: "Worcester, Massachusetts, United States",
@@ -92,6 +96,7 @@ export const content = {
       title: "Research Assistant",
       logo: "/cu.png",
       company: "Clark University",
+      companyURL: 'https://clarku.edu/',
       employmentType: "Part-time",
       duration: "Dec 2023 - Present",
       location: "Worcester, Massachusetts, United States",
@@ -106,6 +111,7 @@ export const content = {
     {
       title: "Software Engineer",
       company: "OpeninApp",
+      companyURL: 'https://openinapp.com/',
       logo: "/oiaRocket.svg",
       employmentType: "Full-time",
       duration: "Dec 2022 - Jun 2023",
@@ -134,6 +140,7 @@ export const content = {
       title: "E-Commerce Manager",
       logo: "/cropped-Meme-Chat-Logo.png",
       company: "Meme Chat",
+      companyURL: 'https://memechat.app/',
       employmentType: "Part-time",
       duration: "Jan 2022 - Dec 2022",
       location: "Remote",
@@ -144,6 +151,7 @@ export const content = {
       title: "Web Developer",
       logo: "/cropped-Meme-Chat-Logo.png",
       company: "Meme Chat",
+      companyURL: 'https://memechat.app/',
       employmentType: "Part-time",
       duration: "Jul 2020 - Oct 2022",
       location: "Remote",
@@ -154,6 +162,7 @@ export const content = {
       title: "Content Moderator",
       logo: "/cropped-Meme-Chat-Logo.png",
       company: "Meme Chat",
+      companyURL: 'https://memechat.app/',
       employmentType: "Part-time",
       duration: "Apr 2020 - Jun 2020",
       location: "Remote",

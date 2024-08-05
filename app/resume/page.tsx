@@ -31,9 +31,7 @@ export default function Resume() {
                 <div className="flex items-center gap-2">
                   <SlLocationPin className="h-5 w-5" />
                   <span>
-                    <Link target="_blank" href={`tel: ${data.personal.phone}`}>
-                      {data.personal.address.city}, {data.personal.address.state} 
-                    </Link>
+                      {data.personal.address.city}, {data.personal.address.state}
                   </span>
                 </div>
               </div>
