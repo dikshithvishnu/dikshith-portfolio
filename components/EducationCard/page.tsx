@@ -12,7 +12,7 @@ const EducationCard = ({ data } : { data : any} ) => {
               {data.education.map((edu: any, index: number) => (
                 <div key={index} className="flex items-start gap-4">
                   <div className="rounded-full p-2 text-primary-foreground">
-                    <Link href={edu.schoolURL}>
+                    <Link target="_blank" href={edu.schoolURL}>
                     <Image
                       src={edu.icon}
                       height={60}

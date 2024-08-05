@@ -15,7 +15,7 @@ const WorkExCard = ({data} : {data:any}) => {
               {data.workExperience.map((work: any, index: number) => (
                 <div key={index} className="flex items-center gap-4">
                   <div className="self-start w-1/6 rounded-full p-2 text-primary-foreground">
-                  <Link href={work.companyURL}>
+                  <Link target="_blank" href={work.companyURL}>
                     <Image src={work.logo} height={60} width={60} className="rounded-full" alt={work.company} />
                   </Link>  
                   </div>
