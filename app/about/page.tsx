@@ -4,6 +4,17 @@ import EducationCard from "@/components/EducationCard/page";
 import WorkExCard from "@/components/WorkExCard/page";
 import SkillsCard from "@/components/SkillsCard/page";
 import ProjectsCard from "@/components/ProjectsCard/pages";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Dikshith Vishnuvardhan | About",
+  description: "Worcester, MA 01610",
+  openGraph: {
+    title: "Dikshith Vishnuvardhan | About",
+    description: "Worcester, MA 01610",
+    images: `/Dikshith.jpeg`
+  }
+};
 
 export default function About() {
   const data = content;

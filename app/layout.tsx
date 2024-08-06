@@ -10,6 +10,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Dikshith Vishnuvardhan",
   description: "Worcester, MA 01610",
+  openGraph: {
+    title: "Dikshith Vishnuvardhan",
+    description: "Worcester, MA 01610",
+    images: `/Dikshith.jpeg`
+  }
 };
 
 export default function RootLayout({

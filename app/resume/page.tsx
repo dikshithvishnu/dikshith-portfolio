@@ -1,6 +1,17 @@
 import Link from "next/link";
 import { content } from "@/lib/constants";
 import { SlLocationPin } from "react-icons/sl";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Dikshith Vishnuvardhan | Resume",
+  description: "Worcester, MA 01610",
+  openGraph: {
+    title: "Dikshith Vishnuvardhan | Resume",
+    description: "Worcester, MA 01610",
+    images: `/Dikshith.jpeg`
+  }
+};
 
 export default function Resume() {
   const data = content;
