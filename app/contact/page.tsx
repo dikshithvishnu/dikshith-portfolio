@@ -10,7 +10,7 @@ import { handleSendContact } from "@/lib/api"
 import { useToast } from "@/components/ui/use-toast"
 import { Metadata } from "next"
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "Dikshith Vishnuvardhan | Contact",
   description: "Worcester, MA 01610",
   openGraph: {
