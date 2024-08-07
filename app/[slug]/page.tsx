@@ -19,7 +19,7 @@ export default function Socials() {
                 })
                 router.push('/')
             }
-            redirect?.length && window.open(redirect, "_blank")
+            redirect?.length && window.open(redirect, "_blank") && router.push('/')
         }
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [path])
