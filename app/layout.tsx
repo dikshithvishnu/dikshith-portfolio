@@ -7,21 +7,15 @@ import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export async function generateMetadata({ pathname }: { pathname: string }): Promise<Metadata> {
-  const pageName = pathname === "/" ? "Home" : pathname?.split("/").pop()?.replace("-", " ");
-  const title = `Dikshith | ${pageName ? pageName?.charAt(0).toUpperCase() + pageName?.slice(1) : ''}`;
-  const description = `Worcester, MA 01610`;
-
-  return {
-    title,
-    description,
-    openGraph: {
-      title,
-      description,
-      images: `/Dikshith.jpeg`,
-    },
-  };
-}
+export const metadata: Metadata = {
+  title: `Dikshith Vishnuvardhan | ${new Date().getFullYear()}`,
+  description: `Worcester, MA 01610`,
+  openGraph: {
+    title: `Dikshith Vishnuvardhan | ${new Date().getFullYear()}`,
+    description: `Worcester, MA 01610`,
+    images: `/Dikshith.jpeg`,
+  },
+};
 
 export default function RootLayout({
   children,
@@ -31,7 +25,9 @@ export default function RootLayout({
   return (
     <ThemeProvider>
       <html lang="en">
-        <body className={`${inter.className} w-screen min-h-screen overflow-x-hidden`}>
+        <body
+          className={`${inter.className} w-screen min-h-screen overflow-x-hidden`}
+        >
           <Header />
           {children}
           <Toaster />
