@@ -8,17 +8,6 @@ import { useState } from "react"
 import { content } from "@/lib/constants"
 import { handleSendContact } from "@/lib/api"
 import { useToast } from "@/components/ui/use-toast"
-import { Metadata } from "next"
-
-const metadata: Metadata = {
-  title: "Dikshith Vishnuvardhan | Contact",
-  description: "Worcester, MA 01610",
-  openGraph: {
-    title: "Dikshith Vishnuvardhan | Contact",
-    description: "Worcester, MA 01610",
-    images: `/Dikshith.jpeg`
-  }
-};
 
 export default function Contact() {
     const { toast } = useToast()

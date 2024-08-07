@@ -11,6 +11,8 @@ import { FaInstagram } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 import { ProfileData } from "../types";
 
+
+
 export const content: ProfileData = {
   personal: {
     name: 'Dikshith Vishnuvardhan',
@@ -199,3 +201,5 @@ export const content: ProfileData = {
     },
   ],
 };
+
+export const validSocials = content.personal.socials.map(social => social.name.toLowerCase())
