@@ -8,7 +8,7 @@ export async function POST(req: Request) {
     if(!process.env.API_BASE_URL) return NextResponse.json({message: 'No env set'}, { status: 400 })
 
     const response: NextResponse = await axios.post(
-      `${process.env.API_BASE_URL}/dikshith_contact`,
+      `${process.env.API_BASE_URL}`,
       payload,
       {
         headers: {
