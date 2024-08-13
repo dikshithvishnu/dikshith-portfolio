@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "../components/Header/page";
 import { ThemeProvider } from "../lib/context/theme-context";
 import { Toaster } from "@/components/ui/toaster";
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +27,8 @@ export default function RootLayout({
   return (
     <ThemeProvider>
       <html lang="en">
+        <GoogleTagManager gtmId="GTM-NDJVW2MK" />
+        <GoogleAnalytics gaId="G-V0T3TSN7T6" />
         <body
           className={`${inter.className} w-screen min-h-screen overflow-x-hidden`}
         >
