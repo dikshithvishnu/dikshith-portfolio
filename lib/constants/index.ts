@@ -209,7 +209,7 @@ export const content: ProfileData = {
     {
       title: "The Sports Insider",
       description: `The Sports Insider is a sports stats aggregator that pulls in the latest odds and stats from various sports websites. Built using React.js, Flask, and MySQL.`,
-      url: `https://insideedgeanalytics.com`,
+      url: `https://insideredgeanalytics.com`,
       image: "/iea.png",
     },
     {
