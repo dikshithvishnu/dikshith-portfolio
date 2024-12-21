@@ -209,12 +209,12 @@ export const content: ProfileData = {
     {
       title: "The Sports Insider",
       description: `The Sports Insider is a sports stats aggregator that pulls in the latest odds and stats from various sports websites. Built using React.js, Flask, and MySQL.`,
-      url: `https://thesportsinsider.vercel.app`,
+      url: `https://insideedgeanalytics.com`,
       image: "/iea.png",
     },
     {
       title: "Video Recommendation System",
-      description: `A video recommendation system that uses GPT-4 to recommend videos from TikTok. Built using Next.js, Tailwind CSS, TypeScript, and Node.js. The Research Paper has been submitted for the CHI '25, Association of Computing Machinery. Paper can be found below.`,
+      description: `A video recommendation system that uses GPT-4 to recommend videos from TikTok. Built using Next.js, Tailwind CSS, TypeScript, and Node.js. The Research Paper has been submitted for the CHI '25, Association of Computing Machinery.`,
       url: `https://0d2f0bc53ec40041bef323f40496ed3c.r2.cloudflarestorage.com/pcs/chi25b/chi25b-sub7139-i13.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Expires=7200&X-Amz-Credential=8c3c5bf11286f4699c7019eaeac51dfe%2F20241221%2Fenam%2Fs3%2Faws4_request&X-Amz-SignedHeaders=host&X-Amz-Date=20241221T015937Z&X-Amz-Signature=abe8644b52b7277877d194273b872c1c0bfc85c8a2a3fb8c6da118fd495d660c`,
       image: "/cu.png",
     },
