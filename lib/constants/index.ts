@@ -207,6 +207,12 @@ export const content: ProfileData = {
   ],
   projects: [
     {
+      title: "The Sports Insider",
+      description: `The Sports Insider is a sports stats aggregator that pulls in the latest odds and stats from various sports websites. Built using React.js, Flask, and MySQL.`,
+      url: `https://thesportsinsider.vercel.app`,
+      image: "/iea.png",
+    },
+    {
       title: "The Meme Club",
       description: `Meme Club is a NFT Marketplace where users can buy, sell and trade NFTs. Built on the MATIC Blockchain, this is a Web3 Application using Metamask as the wallet provider.`,
       url: `https://thememe.club`,
