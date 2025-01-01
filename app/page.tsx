@@ -2,6 +2,8 @@ import { greeting } from "@/lib/helper";
 import Image from "next/image";
 import { content } from  '../lib/constants'
 import { Button } from "@/components/ui/button";
+import GitHubCalendar from 'react-github-calendar';
+import { FaGithub } from "react-icons/fa";
 
 export default function Home() {
   
@@ -16,6 +18,18 @@ export default function Home() {
         <h2 className="text-xl md:text-2xl font-medium">{`Good ${greeting()} 👋`}</h2>
         <h1 className="text-2xl md:text-3xl font-semibold">{content.home.title}</h1>
         <p className="text-lg text-justify">{content.home.description}</p>
+        <div className="hidden md:flex md:flex-col">
+        <div className="flex items-center gap-2">
+          <FaGithub className="text-2xl" />
+          <p>Stats - {new Date().getFullYear()}</p>
+        </div>
+        <GitHubCalendar style={{
+          width: '100%',
+          marginTop: '20px',
+          marginBottom: '20px',
+          overflowX: 'hidden'
+        }} colorScheme="light" username="dikshithvishnu" />
+        </div>
         <Button className="bg-primary dark:text-white dark:bg-primary">
           <a href={'/Dikshith Vishnuvardhan - Resume.pdf'} download>
             Download Resume
