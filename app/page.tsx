@@ -21,7 +21,7 @@ export default function Home() {
         <div className="hidden md:flex md:flex-col">
         <div className="flex items-center gap-2">
           <FaGithub className="text-2xl" />
-          <p>Stats - {new Date().getFullYear()}</p>
+          <p>Stats</p>
         </div>
         <GitHubCalendar style={{
           width: '100%',
