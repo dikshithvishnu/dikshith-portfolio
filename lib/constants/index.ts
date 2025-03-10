@@ -82,7 +82,7 @@ export const content: ProfileData = {
       title: "Software Development Engineer",
       logo: "/iea.png",
       company: "Insider Edge Analytics",
-      companyURL: 'https://insideredgeanalytics.com/',
+      companyURL: 'https://thebettinginsider.com/',
       employmentType: "Part-time",
       duration: "Sep 2024 - Present",
       location: "Atlanta, Georgia (Remote)",
@@ -209,7 +209,7 @@ export const content: ProfileData = {
     {
       title: "The Sports Insider",
       description: `The Sports Insider is a sports stats aggregator that pulls in the latest odds and stats from various sports websites. Built using React.js, Flask, and MySQL.`,
-      url: `https://insideredgeanalytics.com`,
+      url: `https://thebettinginsider.com`,
       image: "/iea.png",
     },
     {
