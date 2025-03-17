@@ -88,14 +88,13 @@ export const content: ProfileData = {
       location: "Atlanta, Georgia (Remote)",
       responsibilities: [
         "Designed and built the entire data infrastructure from the ground up, including Entity Relationship Diagrams (ERD), database schema, and deployment of MySQL databases.",
-        "Developed and deployed data mining scripts in Python to extract and process historical data spanning 10+ years from various web pages and APIs, ensuring data accuracy and scalability.",
-        "Built full-stack applications by developing REST APIs using Flask for backend services and a responsive frontend interface using Next.js and Tailwind CSS, enhancing user experience.",
-        "Implemented CI/CD pipelines with shell scripts for seamless integration and deployment of both frontend and backend systems using Git and Docker, improving release efficiency and minimizing downtime.",
-        "Deployed applications on Google Cloud Platform (GCP) Compute Engine with domain configuration and SSL installation, ensuring security and high availability.",
+        "Built full-stack applications by developing REST APIs using Flask and Node.js for backend services and a responsive frontend interface using Next.js and Tailwind CSS, enhancing user experience and SEO.",
+        "Utilized Stripe payment gateway for checkouts and wrote scripts in Node.js to listen to Stripe webhook events to update and store user metadata.",
+        "Automated CI/CD workflows with shell scripts and GitHub Actions which streamlined deployment of both frontend and backend systems, improving release efficiency and minimizing downtime.",
         "Conducted unit testing and ensured code efficiency, contributing to a product that attracted 450 paying users and 250 daily active users (DAUs) within 4 weeks post-launch."
       ],
       description: "As a Software Development Engineer at Insider Edge Analytics, I am responsible for developing and maintaining the company's web applications and APIs.",
-      skills: ["ReactJS", "NextJS", "Tailwind CSS", "Python", "Flask", "MySQL", "GCP", "GIT", "Docker"],
+      skills: ["ReactJS", "NextJS", "Tailwind CSS", "Python", "Flask", "MySQL", "GCP", "Git", "Docker", "GitHub Actions", "Webhooks"],
     },
     {
       title: "Web Designer and Data Analyst",
