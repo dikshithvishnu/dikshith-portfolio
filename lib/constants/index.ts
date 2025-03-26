@@ -205,12 +205,12 @@ export const content: ProfileData = {
     { name: "Flask", icon: SiFlask },
   ],
   projects: [
-    {
-      title: "USCIS Case Tracker",
-      description: `USCIS Case Tracker is a simple and user-friendly app designed to help individuals track their U.S. immigration case status with ease. This was built using Next.js, and Tailwind CSS to help my fellow peers and myself to easily track our work authorization cases without having to visit the USCIS website every time.`,
-      url: `https://uscis-case-tracker.vercel.app/`,
-      image: "/uscis.png",
-    },
+    // {
+    //   title: "USCIS Case Tracker",
+    //   description: `USCIS Case Tracker is a simple and user-friendly app designed to help individuals track their U.S. immigration case status with ease. This was built using Next.js, and Tailwind CSS to help my fellow peers and myself to easily track our work authorization cases without having to visit the USCIS website every time.`,
+    //   url: `https://uscis-case-tracker.vercel.app/`,
+    //   image: "/uscis.png",
+    // },
     {
       title: "The Sports Insider",
       description: `The Sports Insider is a sports stats aggregator that pulls in the latest odds and stats from various sports websites. Built using React.js, Flask, and MySQL.`,
