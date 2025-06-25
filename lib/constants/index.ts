@@ -48,7 +48,11 @@ export const content: ProfileData = {
   },
   home: {
     title: `I am Dikshith Vishnuvardhan`,
-    description: `A software developer with 4 years of experience in web development. Currently pursuing my Master of Science in Information Technology at Clark University`,
+    description: `Results-driven software engineer with over 4 years of expertise in full-stack development and cloud 
+technologies. Experienced in building scalable web applications that drive user engagement and generate 
+revenue. Strong background in API integration, microservices architecture, and data analytics. Graduated with 
+MS in Information Technology from Clark University while developing innovative solutions that combine 
+technical excellence with practical business impact.`,
     location: `Worcester, MA, USA`,
   },
   about: {
@@ -65,7 +69,7 @@ export const content: ProfileData = {
       years: "May 2025",
       icon: "/cu.png",
       grade: '3.9/4.0 GPA',
-      description: `Currently having a score of 3.9 GPA. Completed coursework in technologies such as Python, Splunk, Tableau and Cybersecurity.`
+      description: `Graduated with a GPA of 3.9. Completed coursework in technologies such as Python, Splunk, Tableau and Cybersecurity.`
     },
     {
       degree: "Bachelor of Technology in Computer Science & Technology",
