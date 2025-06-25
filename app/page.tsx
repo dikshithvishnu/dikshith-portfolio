@@ -9,7 +9,7 @@ export default function Home() {
   
   return (
     <>
-    <main className="flex flex-col items-center justify-center min-h-[90vh]">
+    <main className="flex flex-col items-center justify-center h-auto min-h-[90vh]">
       <div className="flex flex-col gap-10 md:gap-0 md:flex-row items-center w-full">
       <div className="w-1/2 flex justify-center">
         <Image className="rounded-full" src={'/Dikshith.jpeg'} height={280} width={280} alt="profile picture" priority={false} />
