@@ -16,7 +16,7 @@ import { ProfileData } from "../types";
 export const content: ProfileData = {
   personal: {
     name: 'Dikshith Vishnuvardhan',
-    email: 'dikshithvishnu2@gmail.com',
+    email: 'contact@dikshith.com',
     phone: '+1 (508) 615-3786',
     socials: [{
       icon: FaGithub,
@@ -35,7 +35,7 @@ export const content: ProfileData = {
     },
     {
       icon: MdOutlineEmail,
-      link: 'mailto: dikshithvishnu2@gmail.com',
+      link: 'mailto: contact@dikshith.com',
       name: 'Email'
     },
   ],
