@@ -16,7 +16,7 @@ const WorkExCard = ({data} : {data:any}) => {
                 <div key={index} className="flex items-center gap-4">
                   <div className="self-start w-1/6 rounded-full p-2 text-primary-foreground">
                   <Link target="_blank" href={work.companyURL}>
-                    <Image src={work.logo} height={60} width={60} className="rounded-full" alt={work.company} />
+                    <Image src={work.logo} height={60} width={60} className="rounded-full object-contain" alt={work.company} />
                   </Link>  
                   </div>
                   <div className="flex-1 space-y-0.5">
