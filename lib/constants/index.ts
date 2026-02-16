@@ -40,10 +40,10 @@ export const content: ProfileData = {
     },
   ],
   address: {
-    street: '950 Main Street',
-    city: 'Worcester',
-    state: 'MA, USA',
-    zip: '01610'
+    street: '9 Clay Street',
+    city: 'Atlanta',
+    state: 'GA, USA',
+    zip: '30317'
   }
   },
   home: {
@@ -53,7 +53,7 @@ technologies. Experienced in building scalable web applications that drive user 
 revenue. Strong background in API integration, microservices architecture, and data analytics. Graduated with 
 MS in Information Technology from Clark University while developing innovative solutions that combine 
 technical excellence with practical business impact.`,
-    location: `Worcester, MA, USA`,
+    location: `Atlanta, GA, USA`,
   },
   about: {
     title: "About Me",
@@ -89,7 +89,7 @@ technical excellence with practical business impact.`,
       companyURL: 'https://trendlinelabs.ai/',
       employmentType: "Part-time",
       duration: "Sep 2024 - Present",
-      location: "Atlanta, Georgia (Remote)",
+      location: "Atlanta, Georgia",
       responsibilities: [
         "Designed and built the entire data infrastructure from the ground up, including Entity Relationship Diagrams (ERD), database schema, and deployment of Postgres databases.",
         "Built full-stack applications by developing REST APIs using Flask and Node.js for backend services and a responsive frontend interface using Next.js and Tailwind CSS, enhancing user experience and SEO.",
@@ -106,7 +106,7 @@ technical excellence with practical business impact.`,
       company: "Clark University",
       companyURL: 'https://clarku.edu/',
       employmentType: "Part-time",
-      duration: "Feb 2024 - Present",
+      duration: "Feb 2024 - Jun 2025",
       location: "Worcester, Massachusetts, United States",
       responsibilities: [
         "Transformed unstructured survey data into actionable insights using MySQL and MS-Excel, producing reports that significantly improved the university's understanding of employment trends.",
@@ -122,7 +122,7 @@ technical excellence with practical business impact.`,
       company: "Clark University",
       companyURL: 'https://clarku.edu/',
       employmentType: "Part-time",
-      duration: "Dec 2023 - Present",
+      duration: "Dec 2023 - Jun 2025",
       location: "Worcester, Massachusetts, United States",
       responsibilities: [
         "Engineered an application integrating TikTok APIs and OpenAI to develop a personalised video recommendation system using NextJS, Tailwind CSS, TypeScript, and NodeJS.",
